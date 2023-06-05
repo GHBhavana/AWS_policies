@@ -1,0 +1,18 @@
+How to retrieve EC2 instance key if lost:
+Answer:
+   
+       Launch 2 instances with their respective key pairs
+          try accessing both ec2 instances
+	  delete key for first instance (then you'll be unable to access the instance)
+          detach first instance volume from ec2 instance
+          Attach this volume to new instance id
+	  try accessing this attached volume from new instance ip through putty
+	  Now stop the new instance and detach this volume from new instance
+	  Attach this volume again to the first instance  
+	  start the first instance again and try accessing it through putty
+	 you can now access the first instance using second instance's key
+
+
+
+             
+            
