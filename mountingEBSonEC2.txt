@@ -1,7 +1,7 @@
 Create instance 
 choose volume and select attach volume {state=available and in same AZ}
 select device name and then attach volume 
-take ssh of the instance created 
+take ssh of the instance created on mobaxterm
 sudo su
 df -hT
 mkfs -t xfs /dev/xvdf 
