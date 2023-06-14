@@ -1,0 +1,14 @@
+Create instance 
+choose volume and select attach volume {state=available and in same AZ}
+select device name and then attach volume 
+take ssh of the instance created 
+sudo su
+df -hT
+mkfs -t xfs /dev/xvdf 
+mkdir /mnt/mydir
+cd /mnt/mydir
+mount /dev/xvdf  /mnt/mydir
+df -hT
+[you can now see mounting]
+
+
