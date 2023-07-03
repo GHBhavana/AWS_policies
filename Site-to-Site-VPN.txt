@@ -29,7 +29,7 @@ Site-to-Site VPN Connection
 11. 	install openswan 
 12.	follow steps from downloaded configuration file 
 13. 	check if tunnel is up
-14. 	both instances 
+14. 	ping both instances 
 
 	
 	
