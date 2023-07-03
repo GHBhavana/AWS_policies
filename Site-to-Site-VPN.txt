@@ -1,0 +1,35 @@
+Site-to-Site VPN Connection
+
+
+1.     Create (pvt) VPC 172.20.0.0/16
+       create (pvt) subnet 172.20.0.0/20
+	RTB -- subnet association
+2.	Launch pvt. instance
+	select AMI amazon linux2 
+	with our VPC and subnet
+	SG- icmp4
+3.	Create (pub) VPC 172.10.0.0/16
+	create subnet 172.10.0.0/20
+	IGW -- attach to vpc
+	RTB -- igw entry
+	    -- subnet association
+4. 	Launch pub. instance
+	select AMI amazon linux2
+	SG - icmp4
+5.      VPG -- attach to pvt. VPC
+6. 	CG -- enter pub instance ip
+7.	private VPC route table 
+	route propogation-- enable 
+8.	Create VPN 
+	--- enter VPG
+	--- enter CG
+	--- static routing -- pub VPC ip
+9.	download configuration
+10.	take SSH of pub instance
+11. 	install openswan 
+12.	follow steps from downloaded configuration file 
+13. 	check if tunnel is up
+14. 	both instances 
+
+	
+	
